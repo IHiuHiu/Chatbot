@@ -42,7 +42,7 @@ if "messages" not in st.session_state: # Initialize the chat message history
 
 @st.cache_data
 def create_model():
-  df = pd.read_excel('/Data1608.xlsx')
+  df = pd.read_excel('./Data1608.xlsx')
   # Get the number of elements in each class
   class_counts = df['LABEL'].value_counts()
 
@@ -68,7 +68,7 @@ def create_model():
   X_test_transformed = vectorizer.transform(X_test)
 
   svm = SVC()
-  with open('model.pkl', 'rb') as f:
+  with open('./model.pkl', 'rb') as f:
     svm = pickle.load(f)
   return svm
   
