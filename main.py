@@ -6,7 +6,6 @@ from tqdm import tqdm
 import re
 import string
 import nltk
-import gensim
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
