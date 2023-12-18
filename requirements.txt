@@ -3,3 +3,5 @@ pandas
 pyttsx3
 transformers
 nltk
+tqdm
+gensim
