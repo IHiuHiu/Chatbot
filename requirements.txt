@@ -4,3 +4,4 @@ pyttsx3
 transformers
 nltk
 tqdm
+openpyxl
