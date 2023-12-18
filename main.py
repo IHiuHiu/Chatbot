@@ -74,6 +74,10 @@ def create_model():
   
 model = create_model()
 vectorizer = TfidfVectorizer()
+
+X_train_transformed = vectorizer.fit_transform(X_train)
+X_test_transformed = vectorizer.transform(X_test)
+
 def infer(text, vectorizer, model):
     # Vectorize the text
     transformed_text = vectorizer.transform([text])
