@@ -5,3 +5,4 @@ transformers
 nltk
 tqdm
 openpyxl
+pickle
