@@ -70,13 +70,10 @@ def create_model():
   svm = SVC()
   with open('./model.pkl', 'rb') as f:
     svm = pickle.load(f)
-  return svm
+  return svm, vectorizer
   
-model = create_model()
-vectorizer = TfidfVectorizer()
+model, vectorizer = create_model()
 
-X_train_transformed = vectorizer.fit_transform(X_train)
-X_test_transformed = vectorizer.transform(X_test)
 
 def infer(text, vectorizer, model):
     # Vectorize the text
