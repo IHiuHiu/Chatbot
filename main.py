@@ -1,5 +1,3 @@
-!pip install scikit-learn
-!pip install transformers
 
 import numpy as np
 import pandas as pd
