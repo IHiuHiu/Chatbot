@@ -81,8 +81,8 @@ def infer(text, vectorizer, model):
 
     # Make the prediction
     y_pred = model.predict(transformed_text)
-
-    print(f'Label: {y_pred[0]}')
+    message = "Bạn nên thử khám chuyên khoa sau: "+ str(y_pred[0])
+    return message
 
 if prompt := st.chat_input("Your question"): # Prompt for user input and save to chat history
     st.session_state.messages.append({"role": "user", "content": prompt})
