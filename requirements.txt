@@ -4,4 +4,3 @@ pyttsx3
 transformers
 nltk
 tqdm
-gensim
